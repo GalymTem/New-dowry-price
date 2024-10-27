@@ -1,35 +1,31 @@
-/* Reset default margin and padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Body Styling */
 body {
     font-family: Arial, sans-serif;
     display: flex;
     justify-content: center;
-    align-items: start; /* Align items to the top for scrolling */
+    align-items: start;
     min-height: 100vh;
     padding: 20px;
-    background: linear-gradient(135deg, #d1c4e9, #3f51b5); /* Background gradient */
-    overflow-y: auto; /* Enable scrolling for the entire page */
+    background: linear-gradient(135deg, #d1c4e9, #3f51b5);
+    overflow-y: auto;
 }
 
-/* Container Box */
 .container {
     background-color: #ffffff;
     border-radius: 12px;
     padding: 30px;
     max-width: 500px;
     width: 100%;
-    max-height: 90vh; /* Limit the container height for scrolling */
-    overflow-y: auto; /* Enable vertical scrolling within the container */
+    max-height: 90vh;
+    overflow-y: auto;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
 }
 
-/* Title Styling */
 h1 {
     font-family: 'Arial', sans-serif;
     font-size: 1.8em;
@@ -38,13 +34,11 @@ h1 {
     margin-bottom: 20px;
 }
 
-/* Label and Legend Styling */
 label, legend {
     font-weight: bold;
     color: #444;
 }
 
-/* Input and Select Styling */
 input, select, textarea {
     display: block;
     width: 100%;
@@ -55,7 +49,6 @@ input, select, textarea {
     font-size: 1rem;
 }
 
-/* Fieldset Styling */
 fieldset {
     margin-bottom: 15px;
     padding: 10px;
@@ -64,7 +57,6 @@ fieldset {
     background-color: #f9f9f9;
 }
 
-/* Button Styling */
 #calculate {
     padding: 10px 20px;
     background-color: #4CAF50;
@@ -84,7 +76,6 @@ fieldset {
     background-color: #45a049;
 }
 
-/* Result Styling */
 #result {
     margin-top: 20px;
     font-weight: bold;
