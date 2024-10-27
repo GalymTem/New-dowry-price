@@ -8,32 +8,88 @@ html {
 
 body {
     height: 100vh;
-    display: flex; 
+    display: flex;
     justify-content: center;
     align-items: center;
-    background: rgb(244,168,200);
-    background: -moz-linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
-    background: -webkit-linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
-    background: linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4a8c8",endColorstr="#006df6",GradientType=1);
+    background: rgb(244, 168, 200);
+    background: linear-gradient(90deg, rgba(244, 168, 200, 1) 0%, rgba(0, 109, 246, 1) 100%);
+    margin: 0;
+    padding: 0;
 }
 
-h1 {
+h1, h2 {
     font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+    text-align: center;
 }
 
 .container {
-    background: #fff;
-    border-radius: 10px;
-    padding: 40px; 
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 60px;
     width: 90%;
-    max-width: 600px; 
+    max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    min-height: 600px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 
 hr {
-    margin-left: 0;
     width: 80px;
-    background: #000;
+    height: 2px;
+    background-color: #333;
+    border: none;
+    margin: 10px auto;
+}
+
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
+
+fieldset {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+label, legend {
+    font-weight: bold;
+    color: #333;
+}
+
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
 }
