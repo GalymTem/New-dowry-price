@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+label, legend {
+    font-weight: bold;
+}
+
+input, select, textarea {
+    display: block;
+    margin-bottom: 10px;
+}
+
+fieldset {
+    margin-bottom: 15px;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+#calculate {
+    padding: 10px 20px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+}
