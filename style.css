@@ -1,35 +1,39 @@
+html {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
+
 body {
-    font-family: Arial, sans-serif;
-    max-width: 600px;
-    margin: auto;
-    padding: 20px;
+    height: 100vh;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    background: rgb(244,168,200);
+    background: -moz-linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
+    background: linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f4a8c8",endColorstr="#006df6",GradientType=1);
 }
 
-label, legend {
-    font-weight: bold;
+h1 {
+    font-family: 'Oswald', sans-serif;
 }
 
-input, select, textarea {
-    display: block;
-    margin-bottom: 10px;
+.container {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px; 
+    width: 90%;
+    max-width: 600px; 
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
 }
 
-fieldset {
-    margin-bottom: 15px;
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-
-#calculate {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    border: none;
-    cursor: pointer;
-}
-
-#result {
-    margin-top: 20px;
-    font-weight: bold;
-    font-size: 1.2em;
+hr {
+    margin-left: 0;
+    width: 80px;
+    background: #000;
 }
