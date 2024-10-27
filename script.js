@@ -33,14 +33,12 @@ document.getElementById('calculate').addEventListener('click', () => {
         const value = Number(reputation[i].value);
         if (reputation[i].checked) {
             price *= (value < 0 ? 1 : value);
-            if (value < 0) price += value;  // Deduct fixed amount if negative
+            if (value < 0) price += value;  
         }
     }
 
-
     const loveLetter = document.getElementById('loveLetter').value;
 
-    // Create object with details
     let person = {
         bride_or_groom_name: name,
         dowry_price: price,
