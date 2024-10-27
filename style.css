@@ -1,54 +1,97 @@
-document.getElementById('calculate').addEventListener('click', () => {
-    let name = document.getElementById('name').value;
-    let price = Number(document.getElementById('startingBid').value);
+html {
+    font-size: 18px;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
+}
 
-    if (!name || !price) {
-        alert('Please enter a valid name and starting bid.');
-        return;
-    }
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(244, 168, 200);
+    background: linear-gradient(90deg, rgba(244, 168, 200, 1) 0%, rgba(0, 109, 246, 1) 100%);
+    margin: 0;
+    padding: 0;
+}
 
-    const education = Number(document.getElementById('education').value);
-    price *= education;
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+    text-align: center;
+}
 
-    const netWorth = Number(document.getElementById('netWorth').value);
-    price *= netWorth;
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 60px; /* Increased padding */
+    width: 90%;
+    max-width: 800px; /* Increased max-width */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 700px; /* Increased min-height */
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 
-    const caste = Number(document.getElementById('caste').value);
-    price += caste;
+hr {
+    width: 80px;
+    height: 2px;
+    background-color: #333;
+    border: none;
+    margin: 10px auto;
+}
 
-    const skills = Array.from(document.getElementsByClassName('skills'));
-    const skillsTotal = skills
-        .filter(skill => skill.checked)
-        .reduce((total, skill) => total + Number(skill.value), 0);
-    price += skillsTotal;
+input[type="text"],
+input[type="number"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
+}
 
-    document.querySelectorAll('input[name="age"]').forEach(age => {
-        if (age.checked) {
-            price *= Number(age.value);
-        }
-    });
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
 
-    const reputation = document.getElementsByClassName('reputation');
-    for (let i = 0; i < reputation.length; i++) {
-        const value = Number(reputation[i].value);
-        if (reputation[i].checked) {
-            price *= (value < 0 ? 1 : value);
-            if (value < 0) price += value;  
-        }
-    }
+label, legend {
+    font-weight: bold;
+    color: #333;
+}
 
-    const loveLetter = document.getElementById('loveLetter').value;
+button {
+    padding: 12px 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
 
-    let person = {
-        bride_or_groom_name: name,
-        dowry_price: price,
-        love_message: loveLetter
-    };
+button:hover {
+    background-color: #45a049;
+}
 
-    const resultDiv = document.getElementById('result');
-    resultDiv.innerHTML = `
-        <p>Your price for ${person.bride_or_groom_name} is $${person.dowry_price.toFixed(2)}.</p>
-        <p>Your Love Letter: ${person.love_message}</p>
-    `;
-    resultDiv.style.color = person.dowry_price < 0 ? 'red' : 'green';
-});
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: 1.2em;
+    color: #333;
+    text-align: center;
+}
