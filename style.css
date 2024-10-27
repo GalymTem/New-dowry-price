@@ -28,11 +28,11 @@ h1, h2 {
 .container {
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 60px; /* Increased padding */
+    padding: 60px;
     width: 90%;
-    max-width: 800px; /* Increased max-width */
+    max-width: 800px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    min-height: 700px; /* Increased min-height */
+    min-height: 700px;
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -51,7 +51,6 @@ input[type="number"],
 select,
 textarea {
     width: 100%;
-    padding: 10px;
     margin: 8px 0;
     border-radius: 8px;
     border: 1px solid #ddd;
@@ -61,7 +60,6 @@ textarea {
 }
 
 fieldset {
-    padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
     margin-bottom: 15px;
