@@ -20,22 +20,16 @@ body {
 
 h1 {
     font-family: 'Oswald', sans-serif;
-    font-size: 2.5rem;
-    text-align: center;
-    color: #333;
 }
 
 .container {
     background: #fff;
     border-radius: 10px;
-    padding: 60px; 
+    padding: 40px; 
     width: 90%;
-    max-width: 800px; 
+    max-width: 600px; 
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    min-height: 700px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+    min-height: 600px;
 }
 
 hr {
@@ -88,4 +82,24 @@ button:hover {
     font-size: 1.5em;
     color: #333;
     text-align: center;
+}
+
+fieldset {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+legend {
+    font-weight: bold;
+    color: #333;
+}
+
+.skills {
+    margin: 5px 0;
+}
+
+.reputation {
+    margin: 5px 0;
 }
