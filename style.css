@@ -1,86 +1,97 @@
-/* Reset default margin and padding */
-* {
+/* Root font settings */
+html {
+    font-size: 18px;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    height: 100%;
 }
 
-/* Body Styling */
 body {
-    font-family: Arial, sans-serif;
+    height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: start; /* Align items to the top for scrolling */
-    min-height: 100vh;
-    padding: 20px;
-    background: linear-gradient(135deg, #d1c4e9, #3f51b5); /* Background gradient */
-    overflow-y: auto; /* Enable scrolling for the entire page */
+    align-items: center;
+    background: rgb(244,168,200);
+    background: linear-gradient(90deg, rgba(244,168,200,1) 0%, rgba(0,109,246,1) 100%);
+    margin: 0;
+    padding: 0;
+}
+
+/* Heading Styles */
+h1, h2 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 2rem;
+    margin: 0;
+    color: #333;
+    text-align: center;
 }
 
 /* Container Box */
 .container {
     background-color: #ffffff;
     border-radius: 12px;
-    padding: 30px;
-    max-width: 500px;
+    padding: 40px;
+    width: 90%;
+    max-width: 600px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+/* Divider Line */
+hr {
+    width: 80px;
+    height: 2px;
+    background-color: #333;
+    border: none;
+    margin: 10px auto;
+}
+
+/* Input and Select Styles */
+input[type="text"],
+input[type="number"],
+select,
+textarea {
     width: 100%;
-    max-height: 90vh; /* Limit the container height for scrolling */
-    overflow-y: auto; /* Enable vertical scrolling within the container */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-}
-
-/* Title Styling */
-h1 {
-    font-family: 'Arial', sans-serif;
-    font-size: 1.8em;
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-/* Label and Legend Styling */
-label, legend {
-    font-weight: bold;
-    color: #444;
-}
-
-/* Input and Select Styling */
-input, select, textarea {
-    display: block;
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 12px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-sizing: border-box;
     font-size: 1rem;
+    font-family: 'Roboto', sans-serif;
 }
 
-/* Fieldset Styling */
+/* Fieldset styling for checkboxes and radio buttons */
 fieldset {
-    margin-bottom: 15px;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 8px;
-    background-color: #f9f9f9;
+    margin-bottom: 15px;
+}
+
+label, legend {
+    font-weight: bold;
+    color: #333;
 }
 
 /* Button Styling */
-#calculate {
-    padding: 10px 20px;
-    background-color: #4CAF50;
-    color: white;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+button {
+    padding: 12px 20px;
     font-size: 1rem;
-    text-align: center;
-    display: block;
-    margin: 0 auto;
+    font-weight: bold;
+    color: #fff;
+    background-color: #4CAF50;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-#calculate:hover {
+button:hover {
     background-color: #45a049;
 }
 
