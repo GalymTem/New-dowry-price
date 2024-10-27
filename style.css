@@ -29,14 +29,14 @@ body {
 h1 {
     font-family: 'Arial', sans-serif;
     font-size: 2em; /* Increased font size */
-    color: #333;
+    color: #333; /* Original color */
     text-align: center;
     margin-bottom: 30px; /* Increased margin */
 }
 
 label, legend {
     font-weight: bold;
-    color: #444;
+    color: #444; /* Original color */
 }
 
 input, select, textarea {
@@ -45,22 +45,22 @@ input, select, textarea {
     padding: 10px; /* Increased padding */
     margin-bottom: 15px; /* Increased margin */
     border-radius: 5px;
-    border: 1px solid #ccc;
+    border: 1px solid #ccc; /* Original border color */
     font-size: 1.1rem; /* Increased font size */
 }
 
 fieldset {
     margin-bottom: 20px; /* Increased margin */
     padding: 15px; /* Increased padding */
-    border: 1px solid #ddd;
+    border: 1px solid #ddd; /* Original border color */
     border-radius: 8px;
-    background-color: #f9f9f9;
+    background-color: #f9f9f9; /* Original background color */
 }
 
 #calculate {
     padding: 12px 25px; /* Increased padding */
-    background-color: #4CAF50;
-    color: white;
+    background-color: #4CAF50; /* Original button color */
+    color: white; /* Original text color */
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -73,13 +73,13 @@ fieldset {
 }
 
 #calculate:hover {
-    background-color: #45a049;
+    background-color: #45a049; /* Original hover color */
 }
 
 #result {
     margin-top: 30px; /* Increased margin */
     font-weight: bold;
     font-size: 1.3em; /* Increased font size */
-    color: #333;
+    color: #333; /* Original color */
     text-align: center;
 }
